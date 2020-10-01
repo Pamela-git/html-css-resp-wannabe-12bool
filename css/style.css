@@ -5,24 +5,76 @@
   box-sizing: border-box;
 }
 
-/* debug */
+/* regole generali */
 [class*="col-"] {
-  /* background-color: lightblue; */
-  min-height: 50px;
-  /* border: solid 1px  #000; */
   text-align: center;
 }
 
+.row {
+  margin-top: 100px;
+}
 
+/* regole generali blocchi */
+.contenuto {
+  margin-top: 20px;
+}
+
+.background {
+  background-color: #f9f9f9;
+}
+
+hr, p {
+  margin-top: 15px;
+}
+
+/* regole generali immagini */
 img {
   height: 200px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 20px auto;
 }
 
+/* regole ultimo blocco img */
 .why > img {
   background-color: #428bca;
   border-radius: 50%;
   padding: 10px
+}
+
+
+/* media query specifiche smartphone */
+@media screen and (max-width: 768px) {
+
+  .row {
+    margin-top: 10px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/* media query specifiche tablet */
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+  .row {
+    margin-top: 50px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
 }
